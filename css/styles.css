@@ -168,13 +168,13 @@ header {
   font-weight: 900;                     
   /* Bold, visually prominent text */
 
-  color: rgba(172, 4, 175, 0.905);    
+  color: rgba(255, 255, 255,);    
   /* Semi-transparent for a subtle background effect */
 
   line-height: 1;                       
   /* Tight line spacing for a compact look */
 
-   margin: -0%;                             
+   margin: -1px;                             
   /* Remove default spacing */
 
   padding-left: 10px;                   
@@ -423,6 +423,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
