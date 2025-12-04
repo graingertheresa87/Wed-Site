@@ -79,7 +79,7 @@ header {
 .book-button {
   padding: clamp(4px, 1vw, 10px) clamp(8px, 2vw, 26px); /* Button padding */
   border-radius: 12px;               /* Rounded corners */
-  background: var(--text-light);     /* White background */
+  background: var(--accent);     /* White background */
   color: var(--bg-dark);             /* Dark text */
   font-size: clamp(12px, 3vw, 18px); /* Responsive font size */
   font-weight: 700;                  /* Bold text */
@@ -93,7 +93,7 @@ header {
 .book-button:hover {
   background: var(--bg-dark);        /* Invert colors on hover */
   color: var(--text-light);
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent);
   transform: scale(1.05);            /* Slight zoom effect */
 }
 
@@ -168,7 +168,7 @@ header {
   font-weight: 900;                     
   /* Bold, visually prominent text */
 
-  color: rgba(255, 255, 255,);    
+  color: var(--accent);    
   /* Semi-transparent for a subtle background effect */
 
   line-height: 1;                       
@@ -423,6 +423,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
