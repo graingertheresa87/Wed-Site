@@ -77,8 +77,11 @@ header {
 }
 
 .book-button {
-  padding: clamp(4px, 1vw, 10px) clamp(8px, 2vw, 26px); /* Button padding */
-  border-radius: 12px;               /* Rounded corners */
+  display: inline-block;       /* Allows padding & margin */
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;          /* Rounded button */
+  text-decoration: none;
   background: var(--accent);     /* White background */
   color: var(--text-light);             /* Dark text */
   font-size: clamp(12px, 3vw, 18px); /* Responsive font size */
@@ -333,8 +336,11 @@ footer {
 
 /* Buttons inside cards */
 .card .btn {
-  padding: clamp(4px, 1vw, 10px) clamp(8px, 2vw, 26px); /* Button padding */
-  border-radius: 12px;               /* Rounded corners */
+  display: inline-block;       /* Allows padding & margin */
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;          /* Rounded button */
+  text-decoration: none;
   background: var(--accent);     /* White background */
   color: var(--text-light);             /* Dark text */
   font-size: clamp(12px, 3vw, 18px); /* Responsive font size */
@@ -427,6 +433,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
