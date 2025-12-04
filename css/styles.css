@@ -168,7 +168,7 @@ header {
   font-weight: 900;                     
   /* Bold, visually prominent text */
 
-  color: rgba(255, 255, 255, 0.43);    
+  color: rgba(172, 4, 175, 0.905);    
   /* Semi-transparent for a subtle background effect */
 
   line-height: 1;                       
@@ -177,7 +177,7 @@ header {
   margin: 0;                             
   /* Remove default spacing */
 
-  margin-bottom: -1%;                   
+  margin-bottom: 0%;                   
   /* Slight overlap with the top of the card */
 
   padding-left: 10px;                   
@@ -426,6 +426,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
