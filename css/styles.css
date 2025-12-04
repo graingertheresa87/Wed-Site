@@ -174,9 +174,6 @@ header {
   line-height: 1;                       
   /* Tight line spacing for a compact look */
 
-  margin: 0;                             
-  /* Remove default spacing */
-
  
 
   padding-left: 10px;                   
@@ -425,6 +422,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
