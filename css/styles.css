@@ -74,34 +74,12 @@ a.btn:hover,
 /* ================================================
    HEADER
 ================================================== */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: var(--bg-dark) ;
-}
-
-.header {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: clamp(5px, 2vw, 10px) clamp(10px, 4vw, 20px);
-}
-
-.header img {
-  width: clamp(40px, 10vw, 80px);
-  flex-shrink: 0;
-  transition: width 0.3s ease;
-}
-
 .header-right {
   display: flex;
   align-items: center;
-  gap: clamp(5px, 2vw, 30px);
+  gap: clamp(10px, 3vw, 40px);
   white-space: nowrap;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .header-right a {
@@ -109,20 +87,15 @@ header {
   text-decoration: none;
   font-size: clamp(12px, 3vw, 18px);
   font-weight: 600;
-  padding: clamp(3px, 1vw, 8px) clamp(3px, 1vw, 8px);
+  padding: clamp(6px, 1vw, 10px);
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
   flex-shrink: 0;
 }
 
 .header-right a:hover {
   color: var(--accent);
-  transform: scale(1.05);
-}
-
-/* Book button in header */
-.book-button {
-  margin-left: 10px;
+  transform: translateY(-2px);
 }
 
 /* ================================================
@@ -316,6 +289,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
