@@ -92,14 +92,10 @@ header {
   padding: clamp(8px, 2vw, 16px) clamp(12px, 4vw, 24px);
 }
 
-/* Logo */
-.header .logo {
+.header img {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-}
-
-.header img {
   width: clamp(48px, 8vw, 80px);
   height: auto;
   transition: opacity 0.3s ease;
@@ -135,40 +131,6 @@ header {
   color: var(--accent);
   background-color: rgba(255, 255, 255, 0.05);
   transform: translateY(-2px);
-}
-
-/* Contact / Book button */
-.header-right .book-button {
-  background: var(--accent);
-  color: #fff;
-  padding: clamp(8px, 1vw, 12px) clamp(14px, 2vw, 20px);
-  border-radius: 999px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-/* Button hover */
-.header-right .book-button:hover {
-  background: var(--accent-hover);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* ================================================
-   MOBILE ADJUSTMENTS
-================================================== */
-@media (max-width: 768px) {
-  .header {
-    padding: 10px 16px;
-  }
-
-  .header-right {
-    gap: 16px;
-  }
-
-  .header-right a {
-    font-size: 14px;
-  }
 }
 
 /* ================================================
@@ -362,6 +324,7 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
 
 
 
