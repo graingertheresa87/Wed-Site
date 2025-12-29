@@ -243,7 +243,7 @@ li { margin-bottom: 0.5rem; }
 }
 
 /* ================================================
-   CAROUSEL BUTTONS
+   CAROUSEL HEADER BUTTONS (Inline next to heading)
 ================================================== */
 .carousel-header {
   display: flex;
@@ -257,11 +257,21 @@ li { margin-bottom: 0.5rem; }
   gap: 0.5rem; /* space between prev/next buttons */
 }
 
-.carousel-controls .carousel-btn {
-  font-size: 1.5rem;  /* optional, adjust size */
-  padding: 0.3rem 0.6rem;  /* optional, adjust spacing */
+.carousel-header .carousel-btn {
+  position: static;   /* inline, ignore absolute positioning */
+  transform: none;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border: none;
 }
 
+/* ================================================
+   CAROUSEL TRACK BUTTONS (Overlay on items)
+================================================== */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -390,6 +400,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
