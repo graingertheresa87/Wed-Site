@@ -277,6 +277,11 @@ li { margin-bottom: 0.5rem; }
   border: none;
 }
 
+.carousel-btn:hover {
+  background: var(--bg-dark);
+  color: var(--accent1);
+}
+
 /* ================================================
    CAROUSEL TRACK BUTTONS (Overlay on items)
 ================================================== */
@@ -291,6 +296,11 @@ li { margin-bottom: 0.5rem; }
   border-radius: 50%;
   cursor: pointer;
   border: none;
+}
+
+.carousel-btn:hover {
+  background: var(--bg-dark);
+  color: var(--accent1);
 }
 
 .carousel-btn.prev { left: 10px; }
@@ -408,6 +418,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
