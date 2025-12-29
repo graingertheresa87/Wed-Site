@@ -358,7 +358,7 @@ footer {
 
 .contact-form .form-group {
   flex: 1 1 auto; /* grow equally but don’t reserve huge space */
-  min-width: 250px; /* keep a minimum size */
+  min-width: 250px; /* maintain minimum size */
   display: flex;
   flex-direction: column;
 }
@@ -415,7 +415,7 @@ footer {
 }
 
 /* ================================================
-   SUCCESS / ERROR MESSAGE
+   SUCCESS / ERROR MESSAGE (JS handled)
 ================================================== */
 #form-message {
   font-weight: 600;
@@ -424,6 +424,7 @@ footer {
   padding: 0.8rem 1rem;
   border-radius: 8px;
   display: none; /* hidden by default */
+  transition: all 0.3s ease;
 }
 
 #form-message.success {
@@ -447,4 +448,10 @@ footer {
   .contact-form .form-row {
     flex-direction: column;
   }
+  
+  .contact-form button {
+    width: 100%;
+    text-align: center;
+  }
 }
+
