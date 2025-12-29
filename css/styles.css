@@ -271,7 +271,7 @@ li {
 .carousel-header {
   display: flex;
   justify-content: space-between; /* heading left, buttons right */
-  align-items: center;            /* vertically center heading */
+  align-items: bottom;            /* vertically center heading */
 }
 
 .carousel-header .card-heading {
@@ -307,14 +307,16 @@ li {
   background: var(--bg-dark);
   color: var(--accent1);
 }
-
+/* ================================================
+   CAROUSEL HEADER BUTTONS (overlay)
+================================================== */
 .carousel-item {
   position: relative; /* makes buttons position relative to this item */
 }
 
 .carousel-btn.track {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background: rgba(0,0,0,0.4);
   color: #fff;
@@ -475,6 +477,7 @@ footer p {
   font-size: 0.9rem;
   color: var(--text-light);
 }
+
 
 
 
