@@ -135,7 +135,8 @@ header {
   font-weight: 900;
   color: var(--accent);
   line-height: 1;
-  margin-bottom: -1px;
+  margin-top: 0;       /* no extra space above heading */
+  margin-bottom: 1rem; /* space between heading and card if needed */
   padding-left: 10px;
   z-index: 0;
 }
@@ -146,20 +147,27 @@ header {
 section.card {
   background: var(--card-bg);
   padding: 2rem;
-  margin-bottom: var(--space);
+  margin-bottom: 4rem; /* fixed space between card bottom and next heading */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
 section.card h3 {
   font-size: clamp(1.6rem, 3vw, 2rem);
+  margin-bottom: 0.8rem;
 }
 
 /* ================================================
    LISTS
 ================================================== */
-ul { padding-left: 20px; }
-li { margin-bottom: 0.5rem; }
+ul {
+  padding-left: 20px;
+  margin: 0 0 0.5rem 0;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
 
 /* ================================================
    SKILL COLUMNS (FIXED)
@@ -193,7 +201,7 @@ li { margin-bottom: 0.5rem; }
 }
 
 /* ================================================
-   PORTFOLIO CAROUSEL (FIXED)
+   PORTFOLIO / CAROUSEL
 ================================================== */
 .portfolio-carousel {
   position: relative;
@@ -207,30 +215,22 @@ li { margin-bottom: 0.5rem; }
 }
 
 .carousel-item {
-  /* Remove fixed min/max widths */
-  flex: 0 0 auto; /* will be overridden by modifier classes */
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem; /* padding ensures content fits */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
-/* MODIFIERS */
-.carousel-4 .carousel-item {
-  flex: 0 0 calc(25% - 2rem);
-  text-align: center;
-}
-
-.carousel-1 .carousel-item {
-  flex: 0 0 100%;
-  text-align: left;
-}
+.carousel-4 .carousel-item { flex: 0 0 calc(25% - 2rem); text-align: center; }
+.carousel-1 .carousel-item { flex: 0 0 100%; text-align: left; }
 
 @media (max-width: 768px) {
   .carousel-4 .carousel-item,
-  .carousel-1 .carousel-item {
-    flex: 0 0 100%;
-  }
+  .carousel-1 .carousel-item { flex: 0 0 100%; }
 }
 
 .carousel-item img {
@@ -240,9 +240,11 @@ li { margin-bottom: 0.5rem; }
   margin-bottom: 1rem;
 }
 
-.carousel-item h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
+.carousel-item h3,
+.carousel-item h4,
+.carousel-item p,
+.carousel-item ul {
+  margin-bottom: 0.5rem;
 }
 
 /* ================================================
@@ -251,8 +253,8 @@ li { margin-bottom: 0.5rem; }
 .carousel-header {
   display: flex;
   justify-content: space-between; /* heading left, buttons right */
-  align-items: center;           /* vertically center with heading */
-  margin-bottom: -1px;;
+  align-items: center;            /* vertically center with heading */
+  margin-bottom: -1px;
 }
 
 .carousel-header .card-heading {
@@ -267,12 +269,12 @@ li { margin-bottom: 0.5rem; }
 
 .carousel-header .carousel-controls {
   display: flex;
-  gap: 1rem; /* space between prev/next buttons */
+  gap: 1rem;
 }
 
 .carousel-header .carousel-btn {
-  position: static;   /* inline, not absolute */
-  transform: translateY(-50%);  
+  position: static;
+  transform: translateY(-50%);
   background: rgba(0,0,0,0.4);
   color: #fff;
   border-radius: 50%;
@@ -303,13 +305,13 @@ li { margin-bottom: 0.5rem; }
   border: none;
 }
 
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
 .carousel-controls .carousel-btn:hover {
   background: var(--bg-dark);
   color: var(--accent1);
 }
-
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
 
 /* ================================================
    CONTACT FORM
@@ -423,6 +425,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
