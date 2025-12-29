@@ -262,12 +262,12 @@ li { margin-bottom: 0.5rem; }
 
 .carousel-header .carousel-controls {
   display: flex;
-  gap: 0.5rem; /* space between prev/next buttons */
+  gap: 1rem; /* space between prev/next buttons */
 }
 
 .carousel-header .carousel-btn {
   position: static;   /* inline, not absolute */
-  transform: none;    /* no translate */
+  transform: translateY(-50%);  
   background: rgba(0,0,0,0.4);
   color: #fff;
   border-radius: 50%;
@@ -408,6 +408,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
