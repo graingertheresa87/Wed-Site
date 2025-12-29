@@ -250,10 +250,12 @@ li {
 }
 
 .carousel-item img {
-  min-width: 150px;
-  max-width: 250px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  width: 100%;              /* fill the card width */
+  height: auto;             /* maintain aspect ratio */
+  object-fit: cover;        /* crop if needed to fill the card nicely */
+  border-radius: 10px;      /* rounded corners */
+  margin-bottom: 1rem;      /* spacing below image */
+  display: block;           /* remove inline spacing issues */
 }
 
 .carousel-item h3,
@@ -472,6 +474,7 @@ footer p {
   font-size: 0.9rem;
   color: var(--text-light);
 }
+
 
 
 
