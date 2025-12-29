@@ -135,6 +135,7 @@ header {
   font-weight: 900;
   color: var(--accent);
   line-height: 1;
+  margin-top: 10px;
   margin-bottom: -1px;
   padding-left: 10px;
   z-index: 0;
@@ -216,7 +217,6 @@ li {
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-  padding: 1.5rem 1.5rem 2rem; /* padding ensures content fits */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -423,6 +423,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
