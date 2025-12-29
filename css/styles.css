@@ -438,37 +438,28 @@ li {
    FOOTER
 ================================================== */
 footer {
+  background: var(--bg-dark);
+  color: var(--text-light);
   text-align: center;
   padding: 20px;
 }
 
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
 
+.footer-menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-menu a:hover,
+.footer-menu a.active {
+  color: var(--accent);
+}
 
