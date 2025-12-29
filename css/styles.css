@@ -223,8 +223,8 @@ li {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 1.5rem 1.5rem 2rem; /* ensure all content fits */
-  flex: 0 0 auto; /* will be overridden by modifiers */
+  padding: 1.5rem 1.5rem 2rem;
+  flex: 0 0 auto; /* default, overridden below */
 }
 
 /* ================================================
@@ -236,11 +236,12 @@ li {
 }
 
 .carousel-1 .carousel-item {
-  flex: 0 0 100%; /* one item per view */
+  flex: 0 0 100%;      /* one item per view */
   max-width: 100%;
   text-align: left;
 }
 
+/* Stack all items on smaller screens */
 @media (max-width: 768px) {
   .carousel-4 .carousel-item,
   .carousel-1 .carousel-item {
@@ -263,13 +264,13 @@ li {
 }
 
 /* ================================================
-   CAROUSEL HEADER BUTTONS (inline with heading)
+   CAROUSEL HEADER BUTTONS (inline with H2)
 ================================================== */
 .carousel-header {
   display: flex;
   justify-content: space-between; /* heading left, buttons right */
   align-items: center;            /* vertically center heading */
-  margin-bottom: -1px;
+  margin-bottom: 1rem;            /* space to carousel below */
 }
 
 .carousel-header .card-heading {
@@ -277,17 +278,37 @@ li {
   font-weight: 900;
   color: var(--accent);
   line-height: 1;
-  margin-bottom: -1px;
+  margin: 0;
   padding-left: 10px;
   z-index: 0;
 }
 
 .carousel-header .carousel-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-header .carousel-btn {
+  position: static;           /* inline with heading */
+  transform: translateY(0);   /* vertically centered by flex */
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border: none;
+}
+
+.carousel-header .carousel-btn:hover {
+  background: var(--bg-dark);
+  color: var(--accent1);
+}
 
 /* ================================================
    CAROUSEL TRACK BUTTONS (Overlay on items)
 ================================================== */
-.carousel-btn {
+.carousel-btn.track {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -300,14 +321,14 @@ li {
   border: none;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.track.prev { left: 10px; }
+.carousel-btn.track.next { right: 10px; }
 
-.carousel-controls .carousel-btn:hover {
+.carousel-btn.track:hover {
   background: var(--bg-dark);
   color: var(--accent1);
 }
-   
+
 /* ================================================
    CONTACT FORM
 ================================================== */
@@ -420,6 +441,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
