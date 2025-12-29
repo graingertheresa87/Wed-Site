@@ -134,7 +134,10 @@ header {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
   color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0%;
   padding-left: 10px;
+  z-index: 0;
 }
 
 /* ================================================
@@ -256,8 +259,10 @@ li { margin-bottom: 0.5rem; }
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 900;
   color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0%;
   padding-left: 10px;
-  margin: 0; /* remove default margin */
+  z-index: 0;
 }
 
 .carousel-header .carousel-controls {
@@ -418,6 +423,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
