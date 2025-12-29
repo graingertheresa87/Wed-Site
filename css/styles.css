@@ -204,22 +204,34 @@ li { margin-bottom: 0.5rem; }
 }
 
 .carousel-item {
+  min-width: 280px;
+  max-width: 320px;
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
   padding: 1.5rem;
-  text-align: center;
 }
 
-.carousel-4 .carousel-item { flex: 0 0 calc(25% - 2rem); }
-.carousel-2 .carousel-item { flex: 0 0 calc(50% - 2rem); }
-.carousel-1 .carousel-item { flex: 0 0 100%; }
+.carousel-4 .carousel-item { flex: 0 0 calc(25% - 2rem);
+                             text-align: center;}
+.carousel-1 .carousel-item { flex: 0 0 100%;
+                             text-align: left;}
 
 @media (max-width: 768px) {
-  .carousel-4 .carousel-item,
-  .carousel-2 .carousel-item {
+  .carousel-4 .carousel-item {
     flex: 0 0 100%;
   }
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.carousel-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 /* ================================================
@@ -353,4 +365,5 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
