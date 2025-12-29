@@ -29,6 +29,10 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ================================================
    REUSABLE BUTTON DEFAULTS
 ================================================== */
@@ -334,6 +338,76 @@ footer {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
+/* ================================================
+   CONTACT FORM
+================================================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* stack on small screens */
+}
+
+.contact-form .form-group {
+  flex: 1 1 250px; /* grow equally, minimum 250px */
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-light);
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  background: var(--accent1);
+  color: var(--text-light);
+  padding: 0.8rem 1.6rem;
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent);
+  color: var(--bg-dark);
+}
 
 
 
