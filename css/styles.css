@@ -135,8 +135,8 @@ header {
   font-weight: 900;
   color: var(--accent);
   line-height: 1;
-  margin-top: 0;       /* no extra space above heading */
-  margin-bottom: 1rem; /* space between heading and card if needed */
+  margin-top: 0;      
+  margin-bottom: -1px; 
   padding-left: 10px;
   z-index: 0;
 }
@@ -147,7 +147,6 @@ header {
 section.card {
   background: var(--card-bg);
   padding: 2rem;
-  margin-bottom: 4rem; /* fixed space between card bottom and next heading */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
@@ -425,6 +424,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 
 
