@@ -266,49 +266,7 @@ li {
 }
 
 /* ================================================
-   CAROUSEL HEADER BUTTONS (inline with H2)
-================================================== */
-.carousel-header {
-  display: flex;
-  justify-content: space-between; /* heading left, buttons right */
-  align-items: bottom;            /* vertically center heading */
-}
-
-.carousel-header .card-heading {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 900;
-  color: var(--accent);
-  line-height: 1;
-  margin-top: 50px;
-  margin-bottom: -1px;
-  padding-left: 10px;
-  z-index: 0;
-}
-
-.carousel-header .carousel-controls {
-  display: flex;
-  gap: 1rem;
-}
-
-.carousel-header .carousel-btn {
-  position: static;           /* inline with heading */
-  transform: translateY(5px);   /* vertically centered by flex */
-  background: rgba(0,0,0,0.4);
-  color: #fff;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-  border: none;
-  margin-top: 0.3em; /* pushes buttons slightly lower */
-}
-
-.carousel-header .carousel-btn:hover {
-  background: var(--bg-dark);
-  color: var(--accent1);
-}
-/* ================================================
-   CAROUSEL HEADER BUTTONS (overlay)
+   CAROUSEL BUTTONS (overlay)
 ================================================== */
 .carousel-item {
   position: relative; /* makes buttons position relative to this item */
@@ -477,6 +435,7 @@ footer p {
   font-size: 0.9rem;
   color: var(--text-light);
 }
+
 
 
 
